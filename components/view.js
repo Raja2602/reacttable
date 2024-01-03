@@ -18,7 +18,7 @@ let View=()=>{
     return(<div>
       {!(status)?<FaSpinner className="animate-spin h-32 w-32 bg-center mt-64 mx-auto "/>:
       <div><table className=" bg-white-100 min-w-min table-fixed  columns-5xl space-x-40  " style={{border:"1px solid black", border:"1px solid black",width:"100%"}}>
-         <thead className="   bg-gray-600 w-auto h-10">
+         <thead className="   bg-gray-600 w-auto h-10 font-bold text-orange-50">
             <tr>
                 
             <th >Name </th>

@@ -1,16 +1,14 @@
 import React from "react";
-// import  IoIosArrowBack  from "react-icons/io/IoIosArrowBack";
-
-// import { Bs0Square } from "react-icons/bs";
-
-// import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+import { useContext } from "react";
 import { FaArrowLeft,FaArrowRight } from "react-icons/fa";
+import { StoreContext } from "../store/store";
 
 
 
 
 
 let Footer=()=>{
+    let values=useContext(StoreContext);
     return(
         <div>
             <footer className="bg-white h-10  text-">
@@ -23,6 +21,7 @@ let Footer=()=>{
                 <option value="30">30</option>
                 <option value="40">40</option>
               </select>
+              <h1 className="mt-2">{values.length}</h1>
               <FaArrowLeft className="mt-3" />
               <FaArrowRight className="mt-3"/>
 
