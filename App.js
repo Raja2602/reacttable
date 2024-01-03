@@ -1,9 +1,12 @@
 import './App.css';
+import View from './components/view';
 
 function App() {
   return (
     <div className="App">
-      <h1 className='text-cyan-600'>hello</h1>
+
+      <View/>
+    
     </div>
   );
 }
